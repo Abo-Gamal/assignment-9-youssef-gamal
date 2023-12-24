@@ -1,0 +1,97 @@
+.main-bg{
+    background-color: #F7EBDD;
+    position: relative;
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+}
+h2{
+    font-family: 'Righteous', sans-serif;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+label{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-weight: bold;
+}
+input{
+    font-family: 'PT Sans Caption', sans-serif;
+}
+.main-bg-context-inputs button{
+    font-family: 'PT Sans Caption', sans-serif;
+    background-color: #BB411F;
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+table{
+    font-family: 'PT Sans Caption', sans-serif;
+}
+.error-layer{
+    background-color: rgba(0, 0, 0, 0.4);
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.error-window{
+    background-color: white;
+    border-radius: 15px;
+    width: 35%;
+    height: 33%;
+}
+.error-window-header{
+    height: 30px;
+    margin-top: 20px;
+}
+.error-window-header button{
+    border: none;
+    background: transparent;
+    margin-right: 30px;
+}
+.error-window-header button i{
+    font-size: x-large;
+
+}
+.dots{
+    width: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 30px;
+}
+.cir1{
+    background-color: #F15E5C;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+.cir2{
+    background-color: #FDBE2D;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+.cir3{
+    background-color: #4CB748;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+p{
+    width: 90%;
+    font-size: x-large;
+    margin-left: 30px;
+    font-family: 'Bree Serif', serif;
+}
+li{
+    list-style: none;
+    margin-left: 30px;
+    font-size: larger;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+li i{
+    color: #C76147;
+}

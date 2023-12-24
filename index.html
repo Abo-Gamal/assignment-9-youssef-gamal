@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>bookmark assignment</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="main-bg w-100 min-vh-100 p-1 d-flex justify-content-center align-items-center">
+            <div class="main-bg-context w-75 mt-5">
+                <h1 class=" text-center mb-5">Bookmarker</h1>
+                <div class="main-bg-context-inputs w-100">
+                    <hr class=" mb-3"/>
+                    <h2 class=" mb-5 text-center"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+                    <label class=" mb-3" for=" siteNameInput"><i class="fa-solid fa-book"></i> Site Name</label>
+                    <input type="text" id="siteNameInput" oninput="siteNameValidation(this.value)" placeholder="Bookmark Name" class=" form-control mb-4">
+                    <label class=" mb-3" for=" siteURLInput"><i class="fa-solid fa-link"></i> Site URL</label>
+                    <input type="text" id="siteURLInput" oninput="siteUrlValidation(this.value)" placeholder="Website URL" class=" form-control mb-4">
+                    <div class="button w-100 d-flex justify-content-center align-items-center">
+                    <button class=" ps-4 pe-4 pt-2 pb-2 mb-1" onclick="addBookmark()" type="submit">Add Bookmark</button>
+                    </div>
+                    <hr class=" mb-3"/>
+                </div>
+                <div class="main-bg-context-table">
+                    <table class=" table text-center text-capitalize ">
+                        <thead>
+                            <th>index</th>
+                            <th>website name</th>
+                            <th>visit</th>
+                            <th>delete</th>
+                        </thead>
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div onclick="closeErrorLayer()" id="errorLayer" class=" d-none error-layer d-flex justify-content-center align-items-center">
+                <div class="error-window">
+                    <div class="error-window-header d-flex justify-content-between mb-3">
+                        <div class="dots">
+                            <span class="cir1 rounded-circle me-2"></span>
+                            <span class="cir2 rounded-circle me-2"></span>
+                            <span class="cir3 rounded-circle me-2"></span>
+                        </div>
+                        <button  onclick="closeErrorLayer()"><i class="fa-solid fa-x"></i></button>
+                    </div>
+                    <p>Site Name or Url is not valid, Please follow the rules below :</p>
+                    <li><i class="fa-regular fa-circle-right"></i> Site name must contain at least 3 characters</li>
+                    <li><i class="fa-regular fa-circle-right"></i> Site URL must be a valid one (start with: "https://")</li>
+                </div>
+            </div>
+        </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
