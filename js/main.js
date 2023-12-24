@@ -64,7 +64,7 @@ function siteNameValidation(name){
     }
 }
 function siteUrlValidation(url){
-    urlRegex = /^(http(s)?):\/\/[(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)/;
+    urlRegex = /^(http(s)?|HTTP(S)?):\/\/[(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)/;
     if(urlRegex.test(url)){
         siteURLInput.classList.replace("is-invalid" , "is-valid");
         return true;
